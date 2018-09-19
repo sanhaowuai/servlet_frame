@@ -1,19 +1,9 @@
 # Maven #
-servlet_project/.idea/
+target/
 # IDEA #
 .idea/
-servlet_01/*.iml
-servlet_01/target/
-servlet_02/target/
-servlet_02/*.iml
-servlet_02_01/target/
-servlet_02_01/*.iml
-servlet_02_02/target/
-servlet_02_02/*.iml
-servlet_02_03/target/
-servlet_02_03/*.iml
-servlet_02_04/target/
-servlet_02_04/*.iml
+*.iml
+
 # Eclipse #
 .settings/
 .metadata/
