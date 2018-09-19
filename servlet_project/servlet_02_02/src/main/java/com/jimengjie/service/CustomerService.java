@@ -22,32 +22,10 @@ import java.util.Properties;
 public class CustomerService {
     //定义LOGGER
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);
-    private static final String DRIVER;
-    private static final String URL;
-    private static final String USERNAME;
-    private static final String PASSWORD;
-
-    static {
-        //使用PropsUtil读取配置文件
-        Properties props = PropsUtil.loadProps("config.properties");
-        DRIVER = props.getProperty("jdbc.driver");
-        URL = props.getProperty("jdbc.url");
-        USERNAME = props.getProperty("jdbc.username");
-        PASSWORD = props.getProperty("jdbc.password");
-        try {
-            Class.forName(DRIVER);
-        } catch (ClassNotFoundException e) {
-            LOGGER.error("can't load jdbc driver",e);
-            e.printStackTrace();
-        }
-    }
     /**
      * 获取客户列表
      */
     public List<Customer> getCustomerList() {
-       /* String sql = "SELECT * FROM customer";
-        return DatabaseHelper.queryEntityList(Customer.class, sql);*/
-
         Connection conn = null;
         try{
             List<Customer> list = new ArrayList<Customer>();
