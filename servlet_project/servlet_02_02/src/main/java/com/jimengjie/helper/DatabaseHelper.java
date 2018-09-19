@@ -15,7 +15,7 @@ import java.util.Properties;
 public final class DatabaseHelper {
 
     //定义LOGGER
-    private static final Logger LOGGER = LoggerFactory.getLogger(CustomerService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DatabaseHelper.class);
     private static final String DRIVER;
     private static final String URL;
     private static final String USERNAME;
