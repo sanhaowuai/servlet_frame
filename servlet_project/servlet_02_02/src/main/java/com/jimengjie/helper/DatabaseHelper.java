@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-/**
+/**D
  * 数据库助手类
  */
 public final class DatabaseHelper {
